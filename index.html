@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS casino</title>
+    <meta charset="UTF-8" />
+    <style>
+      Win.winning-alert {
+        color: blue;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+    <form id="game-form">
+      <h3>
+        Generate number between 0 and
+        <input id="generator" name="generator" type="number" min="0" />
+      </h3>
+      <p>
+        Guess the number:
+        <input id="guessNum" name="guessNum" type="number" min="0" />
+        <button class="submitBtn">Roll!</button>
+      </p>
+    </form>
+    <p class="resultBox"></p>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
